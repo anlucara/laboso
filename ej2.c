@@ -6,7 +6,7 @@ struct parametros_hilo{
     	int contador;
 };
  
-void* imprimir_caracter(void* parámetros){
+void* imprimir_caracter(void* parametros){
  
     	struct parametros_hilo* p = (struct parametros_hilo*) parametros;
     	int i; 
