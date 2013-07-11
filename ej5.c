@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 void* calcular_primo(void* arg){  
-  intcandidato = 2;
+	int candidato = 2;
 	int n = *((int*) arg);
 	while(1){
 		int factor;      
 		int es_primo = 1;       
-        for(factor = 2; factor <candidato; ++factor)
+        		for(factor = 2; factor <candidato; ++factor)
 			if(candidato % factor == 0){           
 				es_primo = 0; 
 			break;
@@ -22,7 +22,7 @@ void* calcular_primo(void* arg){
 }
 
 int main(){
-  pthread_t hilo_id;
+  	pthread_t hilo_id;
 	int cual_primo = 5000;
 	int primo;
 
