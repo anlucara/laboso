@@ -26,6 +26,8 @@ void* contar_lineas(void * arg)
             break;
     }
 
+    fclose(f);
+
     return (void*) n_lineas;
 }
 
